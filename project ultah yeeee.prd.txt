@@ -1,0 +1,407 @@
+# Product Requirements Document (PRD)
+
+## Project
+
+Birthday & 2 Month Anniversary Website ❤️
+
+---
+
+## Overview
+
+Create a romantic single-page website as a birthday gift and 2-month anniversary celebration.
+
+The website should feel like a journey through memories, emotions, and appreciation rather than a traditional website.
+
+Users experience the story through vertical scrolling sections with smooth transitions, flower animations, emotional messages, and a WhatsApp-style chat memory section.
+
+No navbar.
+
+No routing.
+
+No external pages.
+
+Everything exists in one continuous experience.
+
+---
+
+## Tech Stack
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Responsive Design
+- Mobile First
+
+---
+
+## Design System
+
+### Theme
+
+Elegant Romantic Dark
+
+### Colors
+
+Background:
+- #0B0B0B
+- #111111
+- #161616
+
+Accent:
+- #FF7EB6
+- #FF5E9C
+- #FFD1E6
+
+Text:
+- #FFFFFF
+- #E5E5E5
+- #BDBDBD
+
+---
+
+## Visual Direction
+
+Build a premium romantic atmosphere.
+
+### Include
+
+- Falling flower petals
+- Rose elements
+- Sakura petals
+- Soft pink glow
+- Smooth animations
+- Glassmorphism cards
+- Elegant typography
+- Floating particles
+
+### Avoid
+
+- Cartoon aesthetics
+- Bright colorful palettes
+- Generic birthday templates
+- Excessive effects
+
+---
+
+# User Experience
+
+The website consists of 6 fullscreen sections.
+
+Each section occupies approximately 100vh.
+
+Use CSS Scroll Snap.
+
+Smooth scrolling is required.
+
+---
+
+# SECTION 01
+
+## Opening Flower Scene 🌸
+
+### Goal
+
+Create a strong first impression.
+
+### Layout
+
+Fullscreen hero.
+
+Large flower illustration as focal point.
+
+Floating petals across screen.
+
+### Content
+
+Title:
+
+Happy Birthday & Happy 2 Months ❤️
+
+Subtitle:
+
+Hari ini bukan cuma tentang bertambahnya usia, tetapi tentang betapa bersyukurnya aku karena semesta mempertemukanku dengan seseorang seistimewa kamu.
+
+CTA Button:
+
+Open My Heart
+
+### Animation
+
+- Flower petals falling
+- Fade in title
+- Glow effect
+- Floating flower movement
+
+---
+
+# SECTION 02
+
+## Birthday Wishes 🎂
+
+### Goal
+
+Deliver heartfelt birthday wishes.
+
+### Content
+
+Title:
+
+Untuk Hari Istimewamu
+
+Message:
+
+Selamat ulang tahun sayang.
+
+Semoga setiap langkahmu dipenuhi kebahagiaan, setiap mimpimu menemukan jalannya, dan setiap harimu selalu memiliki alasan untuk tersenyum.
+
+Terima kasih karena selalu hadir dengan cara yang sederhana namun berarti. Kehadiranmu membuat banyak hal terasa lebih hangat dan lebih indah.
+
+### Animation
+
+- Fade up reveal
+- Card glow
+- Floating particles
+
+---
+
+# SECTION 03
+
+## 2 Month Anniversary ❤️
+
+### Goal
+
+Celebrate relationship milestone.
+
+### Content
+
+Title:
+
+2 Months With You
+
+Message:
+
+Mungkin dua bulan terdengar singkat bagi sebagian orang, tapi bagiku ada begitu banyak tawa, cerita, perhatian, dan kenangan yang telah kita lalui bersama.
+
+Terima kasih sudah menjadi rumah yang nyaman untuk pulang, tempat berbagi cerita, dan alasan untuk menantikan hari esok.
+
+### Components
+
+Timeline:
+
+Month 1 → Month 2
+
+Animated glowing connection line.
+
+### Animation
+
+- Timeline reveal
+- Scroll-triggered glow
+- Floating particles
+
+---
+
+# SECTION 04
+
+## Our Little Conversations 💌
+
+### Goal
+
+Show memorable chats and emotional beginnings.
+
+### Layout
+
+Centered smartphone mockup.
+
+WhatsApp-inspired interface.
+
+Dark mode adaptation.
+
+### Chat Flow
+
+Right Bubble:
+
+halooooo
+
+Left Bubble:
+
+heyyy
+
+Right Bubble:
+
+kamuuu main gamee apaa ajaa
+
+Left Bubble:
+
+ak ada rosblok ama emel si
+
+Right Bubble:
+
+drop ur id
+
+Right Bubble:
+
+km rosblok biasaa main apaa😭
+
+Left Bubble:
+
+ak main aoa aja yg seru
+
+Left Bubble:
+
+main horror
+
+Left Bubble:
+
+kalo mendaki aku udah jarang
+
+Left Bubble:
+
+km mau mabar ama ak yh
+
+### After Chat
+
+Show typing indicator:
+
+● ● ●
+
+Then reveal text:
+
+"Dari obrolan sederhana ini, aku mulai mengenal seseorang yang sekarang menjadi bagian penting dalam hidupku."
+
+### Animation
+
+- Auto chat playback
+- Bubble slide left/right
+- Typing indicator
+- Auto scrolling conversation
+- Floating phone mockup
+- Fade transition after last message
+
+### Reference
+
+Use the uploaded WhatsApp screenshot as visual inspiration for bubble positioning, spacing, and conversational flow.
+
+---
+
+# SECTION 05
+
+## Things I Adore About You 🌹
+
+### Goal
+
+Highlight meaningful qualities.
+
+### Layout
+
+Responsive card grid.
+
+### Cards
+
+❤️ Senyummu yang selalu menenangkan
+
+❤️ Caramu peduli pada hal-hal kecil
+
+❤️ Kesabaranmu menghadapi banyak hal
+
+❤️ Tawamu yang menular
+
+❤️ Cara kamu membuat hari biasa terasa spesial
+
+❤️ Kehadiranmu yang membuat hidup terasa lebih lengkap
+
+### Animation
+
+- Stagger reveal
+- Hover lift
+- Soft glow effect
+
+---
+
+# SECTION 06
+
+## Final Love Letter 💖
+
+### Goal
+
+Deliver emotional ending.
+
+### Layout
+
+Centered romantic letter.
+
+More flower particles than previous sections.
+
+### Content
+
+Title:
+
+A Letter For You
+
+Message:
+
+Aku tidak tahu bagaimana cerita kita akan berjalan ke depannya, tetapi aku tahu bahwa aku sangat bersyukur dipertemukan denganmu.
+
+Terima kasih sudah hadir, terima kasih untuk setiap tawa, perhatian, dan cerita yang kita bagi bersama.
+
+Selamat ulang tahun sayang.
+
+Selamat 2 bulan untuk kita.
+
+Semoga masih ada banyak halaman indah yang akan kita tulis bersama.
+
+### Final Animation
+
+Typing effect:
+
+Happy Birthday ❤️
+
+Happy 2 Month Anniversary 🌸
+
+I Love You.
+
+### Ending State
+
+Continuous flower petals animation.
+
+Soft ambient glow.
+
+---
+
+# Interaction Requirements
+
+### Scroll
+
+- CSS Scroll Snap
+- Smooth scrolling
+- No navbar
+- No menu
+- No page routing
+
+### Effects
+
+- Fade In
+- Scale Reveal
+- Parallax Flower Movement
+- Glow Effects
+- Typing Animation
+- Floating Elements
+
+### Performance
+
+- 60 FPS animations
+- Lightweight implementation
+- Mobile optimized
+
+---
+
+# Engineering Requirements
+
+## HTML Structure
+
+```html
+<section id="hero"></section>
+<section id="birthday"></section>
+<section id="anniversary"></section>
+<section id="chat-memories"></section>
+<section id="reasons"></section>
+<section id="love-letter"></section>

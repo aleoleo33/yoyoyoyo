@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday & Happy 2 Months ❤️</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="videoplayback.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Music Toggle Button -->
+    <button id="music-toggle" class="music-toggle hidden" aria-label="Toggle Music">
+        <svg id="music-icon-play" class="music-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18V5l12-2v13"></path>
+            <circle cx="6" cy="18" r="3"></circle>
+            <circle cx="18" cy="16" r="3"></circle>
+        </svg>
+        <svg id="music-icon-mute" class="music-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+        </svg>
+    </button>
+
+    <!-- Petals Canvas -->
+    <canvas id="petals-canvas"></canvas>
+
+    <!-- Container for Scroll Snapping -->
+    <main class="scroll-container">
+        
+        <!-- SECTION 01: Hero Scene -->
+        <section id="hero" class="snap-section">
+            <div class="glow-sphere glow-sphere-1"></div>
+            <div class="glow-sphere glow-sphere-2"></div>
+            
+            <div class="content-wrapper hero-content">
+
+                <div class="flower-illustration-container">
+                    <svg class="swaying-flower animate-item" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Stem -->
+                        <path d="M100 100 C110 140, 90 180, 100 200" stroke="#7eb68c" stroke-width="4" stroke-linecap="round" fill="none"/>
+                        <!-- Leaves -->
+                        <path d="M98 150 C70 140, 60 160, 70 170 C85 170, 95 160, 98 150" fill="#7eb68c"/>
+                        <path d="M102 170 C130 160, 140 180, 130 190 C115 190, 105 180, 102 170" fill="#7eb68c"/>
+                        <!-- Flower Base -->
+                        <path d="M92 95 C100 110, 100 110, 108 95 L100 100 Z" fill="#7eb68c"/>
+                        <!-- Back Petal -->
+                        <path d="M90 60 C100 30, 120 30, 110 60 C105 90, 95 90, 90 60" fill="#FF5E9C"/>
+                        <!-- Side Petals -->
+                        <path d="M100 105 C60 105, 50 50, 80 40 C95 30, 100 80, 100 105" fill="#FF7EB6"/>
+                        <path d="M100 105 C140 105, 150 50, 120 40 C105 30, 100 80, 100 105" fill="#FFD1E6"/>
+                        <!-- Front Petal -->
+                        <path d="M100 105 C80 105, 75 60, 100 50 C125 60, 120 105, 100 105" fill="#FFB6C1"/>
+                    </svg>
+                </div>
+                
+                <h1 class="hero-title animate-item fade-in">
+                    Happy Birthday &<br><span class="accent-text">Happy 2 Months ❤️</span>
+                </h1>
+                
+                <p class="hero-subtitle animate-item fade-in">
+                    Hari ini bukan cuma tentang bertambahnya usia, tetapi tentang betapa bersyukurnya aku karena semesta mempertemukanku dengan seseorang seistimewa kamu.
+                </p>
+                
+                <button id="cta-open-heart" class="btn btn-primary animate-item fade-in">
+                    Open My Heart
+                    <span class="btn-glow"></span>
+                </button>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+            </div>
+        </section>
+
+        <!-- SECTION 02: Birthday Wishes -->
+        <section id="birthday" class="snap-section">
+            <div class="glow-sphere glow-sphere-3"></div>
+            
+            <div class="content-wrapper">
+                <div class="card glass-card animate-group">
+                    <div class="card-icon">🎂</div>
+                    <h2 class="section-title animate-item">Untuk Hari Istimewamu</h2>
+                    <div class="card-content animate-item">
+                        <p class="wishes-text highlight-p">Selamat ulang tahun sayang.</p>
+                        <p class="wishes-text">Semoga setiap langkahmu dipenuhi kebahagiaan, setiap mimpimu menemukan jalannya, dan setiap harimu selalu memiliki alasan untuk tersenyum.</p>
+                        <p class="wishes-text">Terima kasih karena selalu hadir dengan cara yang sederhana namun berarti. Kehadiranmu membuat banyak hal terasa lebih hangat dan lebih indah.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 03: 2 Month Anniversary -->
+        <section id="anniversary" class="snap-section">
+            <div class="glow-sphere glow-sphere-4"></div>
+            
+            <div class="content-wrapper">
+                <h2 class="section-title animate-item center-text">2 Months With You</h2>
+                <div class="section-subtitle animate-item center-text">
+                    <p>Mungkin dua bulan terdengar singkat bagi sebagian orang, tapi bagiku ada begitu banyak tawa, cerita, perhatian, dan kenangan yang telah kita lalui bersama.</p>
+                    <p style="margin-top: 1rem;">Terima kasih sudah menjadi rumah yang nyaman untuk pulang, tempat berbagi cerita, dan alasan untuk menantikan hari esok.</p>
+                </div>
+                
+                <div class="simple-timeline animate-group">
+                    <div class="timeline-node" id="node-month-1">
+                        <div class="node-circle">1</div>
+                        <span class="node-label">Month 1</span>
+                    </div>
+                    <div class="timeline-connector">
+                        <div class="connector-progress" id="anniversary-progress"></div>
+                    </div>
+                    <div class="timeline-node" id="node-month-2">
+                        <div class="node-circle">2</div>
+                        <span class="node-label">Month 2</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 04: Our Little Conversations -->
+        <section id="chat-memories" class="snap-section">
+            <div class="glow-sphere glow-sphere-5"></div>
+            
+            <div class="content-wrapper chat-wrapper">
+                <h2 class="section-title center-text animate-item">Our Little Conversations 💌</h2>
+                
+                <div class="chat-card-container animate-item">
+                    <!-- Clean Chat UI -->
+                    <div class="chat-card">
+                            <!-- WhatsApp Header -->
+                            <div class="chat-header">
+                                <div class="chat-header-left">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" class="back-arrow">
+                                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                                        <polyline points="12 19 5 12 12 5"></polyline>
+                                    </svg>
+                                    <div class="chat-avatar">❤️</div>
+                                    <div class="chat-user-info">
+                                        <span class="chat-username">Sayang</span>
+                                        <span class="chat-status">online</span>
+                                    </div>
+                                </div>
+                                <div class="chat-header-icons">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                        <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/>
+                                    </svg>
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="margin-left: 12px;">
+                                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            
+                            <!-- WhatsApp Chat Area -->
+                            <div class="chat-body" id="chat-messages-container">
+                                <!-- Chat bubbles will be injected here via JavaScript -->
+                                <div class="chat-date">HARI INI</div>
+                            </div>
+                            
+                            <!-- WhatsApp Input Box -->
+                            <div class="chat-footer">
+                                <div class="chat-input-wrapper">
+                                    <span class="chat-emoji-icon">😊</span>
+                                    <div class="chat-input-placeholder">Ketik pesan...</div>
+                                    <span class="chat-attach-icon">📎</span>
+                                </div>
+                                <div class="chat-send-btn">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                        <path d="M2 21l21-9L2 3v7l15 2-15 2z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                
+                <!-- Captions shown after chat finishes -->
+                <div class="chat-caption-container" id="chat-caption">
+                    <p class="chat-romantic-text">
+                        "Dari obrolan sederhana ini, aku mulai mengenal seseorang yang sekarang menjadi bagian penting dalam hidupku."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 05: Things I Adore About You -->
+        <section id="reasons" class="snap-section">
+            <div class="glow-sphere glow-sphere-1"></div>
+            
+            <div class="content-wrapper">
+                <h2 class="section-title center-text animate-item">Things I Adore About You 🌹</h2>
+                <p class="section-subtitle center-text animate-item">Ada begitu banyak hal yang membuatku jatuh hati padamu setiap hari. Beberapa di antaranya...</p>
+                
+                <div class="reasons-grid animate-group">
+                    <!-- Card 1 -->
+                    <div class="reason-card polaroid-card animate-item rotate-l-1">
+                        <div class="polaroid-photo">
+                            <img src="src img/WhatsApp Image 2026-06-12 at 22.39.33.jpeg" style="width: 100%; height: 100%; object-fit: cover;" alt="Cantik 1">
+                            <div class="photo-glow"></div>
+                        </div>
+                        <p class="polaroid-caption">Senyummu yang selalu paling manis</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="reason-card polaroid-card animate-item rotate-r-1">
+                        <div class="polaroid-photo">
+                            <img src="src img/WhatsApp Image 2026-06-12 at 22.39.34 (1).jpeg" style="width: 100%; height: 100%; object-fit: cover;" alt="Cantik 2">
+                            <div class="photo-glow"></div>
+                        </div>
+                        <p class="polaroid-caption">Cantiknya kamu dari luar dan dalam</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="reason-card polaroid-card animate-item rotate-l-2">
+                        <div class="polaroid-photo">
+                            <img src="src img/WhatsApp Image 2026-06-12 at 22.39.34 (2).jpeg" style="width: 100%; height: 100%; object-fit: cover;" alt="Cantik 3">
+                            <div class="photo-glow"></div>
+                        </div>
+                        <p class="polaroid-caption">Nggak pernah bosen liat wajah cantikmu</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="reason-card polaroid-card animate-item rotate-r-2">
+                        <div class="polaroid-photo">
+                            <img src="src img/WhatsApp Image 2026-06-12 at 22.39.34.jpeg" style="width: 100%; height: 100%; object-fit: cover;" alt="Cantik 4">
+                            <div class="photo-glow"></div>
+                        </div>
+                        <p class="polaroid-caption">Tatapan matamu yang selalu bikin salting</p>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="reason-card polaroid-card animate-item rotate-l-3">
+                        <div class="polaroid-photo">
+                            <img src="src img/WhatsApp Image 2026-06-12 at 22.39.35 (1).jpeg" style="width: 100%; height: 100%; object-fit: cover;" alt="Cantik 5">
+                            <div class="photo-glow"></div>
+                        </div>
+                        <p class="polaroid-caption">Effortlessly beautiful setiap saat</p>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="reason-card polaroid-card animate-item rotate-r-3">
+                        <div class="polaroid-photo">
+                            <img src="src img/WhatsApp Image 2026-06-12 at 22.39.35 (2).jpeg" style="width: 100%; height: 100%; object-fit: cover;" alt="Cantik 6">
+                            <div class="photo-glow"></div>
+                        </div>
+                        <p class="polaroid-caption">Pesonamu yang bikin selalu jatuh cinta</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 06: Final Love Letter -->
+        <section id="love-letter" class="snap-section">
+            <div class="glow-sphere glow-sphere-6"></div>
+            
+            <div class="content-wrapper">
+                <div class="letter-card glass-card animate-group">
+                    <h2 class="section-title letter-title animate-item">A Letter For You 💖</h2>
+                    
+                    <div class="letter-body animate-item">
+                        <p>Aku tidak tahu bagaimana cerita kita akan berjalan ke depannya, tetapi aku tahu bahwa aku sangat bersyukur dipertemukan denganmu.</p>
+                        <p>Terima kasih sudah hadir, terima kasih untuk setiap tawa, perhatian, dan cerita yang kita bagi bersama.</p>
+                        <p>Selamat ulang tahun sayang.</p>
+                        <p>Selamat 2 bulan untuk kita.</p>
+                        <p>Semoga masih ada banyak halaman indah yang akan kita tulis bersama.</p>
+                    </div>
+                    
+                    <!-- Dynamic Typing Container -->
+                    <div class="typing-container animate-item">
+                        <span id="final-typing-text" class="typed-text"></span><span class="typing-cursor">|</span>
+                    </div>
+                </div>
+            </div>
+            
+            <footer class="footer-note">
+                <p>Dibuat dengan cinta untuk kamu ❤️</p>
+            </footer>
+        </section>
+        
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
